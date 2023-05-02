@@ -8,35 +8,23 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
 /**
  *
  * @author mbaryla
  */
-public class WypiekiController {
+public class ClientWypiekiCebulakiController {
     
-    @FXML private BorderPane bpWypiekiClient;
+    @FXML private BorderPane bpClientWypiekiCebulaki;
     
     @FXML
-    private void switchToDrozdzowki() {
-        loadAMenuItem("client_wypieki_drozdzowki");
+    private void switchToCebulak() {
+        loadAMenuItem("client_wypieki_cebulaki_cebulak");
     }
-    
     @FXML
-    private void switchToPaczki() {
-        loadAMenuItem("client_wypieki_paczki");
-    }
-    
-    @FXML
-    private void switchToPizze() {
-        loadAMenuItem("client_wypieki_pizze");
-    }
-    
-    @FXML
-    private void switchToCebulaki() {
-        loadAMenuItem("client_wypieki_cebulaki");
+    private void switchToCebulakZCzerwonejCebuli() {
+        loadAMenuItem("client_wypieki_cebulaki_cebulakZCzerwonejCebuli");
     }
     
     @FXML
@@ -48,7 +36,7 @@ public class WypiekiController {
             ex.printStackTrace();
         }
         
-        bpWypiekiClient.setCenter(root);
+        bpClientWypiekiCebulaki.setCenter(root);
         
     } 
     

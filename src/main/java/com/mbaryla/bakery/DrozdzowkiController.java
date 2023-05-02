@@ -19,11 +19,31 @@ public class DrozdzowkiController {
     
     @FXML private BorderPane bpWypiekiDrozdzowkiClient;
     
-    @FXML private Button btnDrozdzowkaZCzekolada;
+    //@FXML private Button btnDrozdzowkaZCzekolada;
     
     @FXML
     private void switchToDrozdzowkaZCzekolada() {
         loadAMenuItem("drozdzowkaZCzekolada");
+    }
+    @FXML
+    private void switchToDrozdzowkaZSerem() {
+        loadAMenuItem("drozdzowkaZSerem");
+    }
+    @FXML
+    private void switchToDrozdzowkaZMarmelada() {
+        loadAMenuItem("drozdzowkaZMarmelada");
+    }
+    @FXML
+    private void switchToRogalZBitaSmietana() {
+        loadAMenuItem("rogalZBitaSmietana");
+    }
+    @FXML
+    private void switchToDrozdzowkaUniwersalna() {
+        loadAMenuItem("drozdzowkaUniwersalna");
+    }
+    @FXML
+    private void switchToDrozdzowkaNiespodzianka() {
+        loadAMenuItem("drozdzowkaNiespodzianka");
     }
     
     @FXML

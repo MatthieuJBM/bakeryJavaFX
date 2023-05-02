@@ -8,35 +8,32 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
 /**
  *
  * @author mbaryla
  */
-public class WypiekiController {
+public class ClientWypiekiPizzeController {
     
-    @FXML private BorderPane bpWypiekiClient;
+    @FXML private BorderPane bpClientWypiekiPizze;
+    
     
     @FXML
-    private void switchToDrozdzowki() {
-        loadAMenuItem("client_wypieki_drozdzowki");
+    private void switchToPizzaZKielbasa() {
+        loadAMenuItem("client_wypieki_pizze_pizzaZKielbasa");
     }
-    
     @FXML
-    private void switchToPaczki() {
-        loadAMenuItem("client_wypieki_paczki");
+    private void switchToPizzaZSzynka() {
+        loadAMenuItem("client_wypieki_pizze_pizzaZSzynka");
     }
-    
     @FXML
-    private void switchToPizze() {
-        loadAMenuItem("client_wypieki_pizze");
+    private void switchToPizzaZPieczarkami() {
+        loadAMenuItem("client_wypieki_pizze_pizzaZPieczarkami");
     }
-    
     @FXML
-    private void switchToCebulaki() {
-        loadAMenuItem("client_wypieki_cebulaki");
+    private void switchToPizzaSerowa() {
+        loadAMenuItem("client_wypieki_pizze_pizzaSerowa");
     }
     
     @FXML
@@ -48,7 +45,7 @@ public class WypiekiController {
             ex.printStackTrace();
         }
         
-        bpWypiekiClient.setCenter(root);
+        bpClientWypiekiPizze.setCenter(root);
         
     } 
     
