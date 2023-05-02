@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="bpClient" fx:id="bpClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="background" stylesheets="@cukierniastyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbaryla.bakery.Client">
+   <left>
+      <VBox prefHeight="325.0" prefWidth="150.0" style="-fx-background-color: #FB8C00;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="75.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="75.0" fitWidth="100.0" layoutX="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/bakeryIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="wypiekiAp" fx:id="wypiekiAp" onMouseClicked="#switchToWypieki" prefHeight="45.0" prefWidth="150.0">
+               <children>
+                  <HBox layoutX="26.0" layoutY="4.0">
+                     <children>
+                        <ImageView fitHeight="37.5" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/wypieki.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="slideMenuClient" text="Wypieki">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="2.0" top="6.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="ciastaAp" fx:id="ciastaAp" onMouseClicked="#switchToCiasta" prefHeight="45.0" prefWidth="150.0">
+               <children>
+                  <HBox layoutX="18.0" layoutY="8.0">
+                     <children>
+                        <ImageView fitHeight="37.5" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="slideMenuClient">
+                           <image>
+                              <Image url="@../../../images/ciastko.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label styleClass="slideMenuClient" text="Ciasta">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="tortyAp" fx:id="tortyAp" onMouseClicked="#switchToTorty" prefHeight="45.0" prefWidth="150.0">
+               <children>
+                  <HBox layoutX="20.0">
+                     <children>
+                        <ImageView fitHeight="37.5" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/tort.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label styleClass="slideMenuClient" text="Torty">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="6.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="dekoracjeAp" fx:id="dekoracjeAp" onMouseClicked="#switchToDekoracje" prefHeight="45.0" prefWidth="150.0">
+               <children>
+                  <HBox layoutX="30.0" layoutY="4.0" AnchorPane.leftAnchor="20.0">
+                     <children>
+                        <ImageView fitHeight="37.5" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/decoration.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="slideMenuClient" text="Dekoracje">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="napojeAp" fx:id="napojeAp" onMouseClicked="#switchToNapoje" prefHeight="45.0" prefWidth="150.0">
+               <children>
+                  <HBox layoutX="30.0" layoutY="4.0" AnchorPane.leftAnchor="20.0">
+                     <children>
+                        <ImageView fitHeight="37.5" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/drink.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="slideMenuClient" text="Napoje">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="600.0" style="-fx-background-color: #F57C00;" styleClass="header" stylesheets="@cukierniastyles.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="clientReturnButton" fitHeight="45.0" fitWidth="49.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#switchToMain" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/return.png" />
+               </image></ImageView>
+            <Label layoutX="240.0" layoutY="16.0" styleClass="company" text="Cukiernia Kruk">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

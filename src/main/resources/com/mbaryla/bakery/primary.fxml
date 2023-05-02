@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="background" stylesheets="@cukierniastyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbaryla.bakery.PrimaryController">
+   <top>
+      <AnchorPane prefHeight="85.0" prefWidth="600.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="240.0" layoutY="21.0" styleClass="company" text="Cukiernia Kruk">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="clientButton" layoutX="336.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToClient" prefHeight="60.0" prefWidth="250.0" text="Client" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="managementButton" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToManagement" prefHeight="60.0" prefWidth="250.0" text="Management" AnchorPane.leftAnchor="30.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
