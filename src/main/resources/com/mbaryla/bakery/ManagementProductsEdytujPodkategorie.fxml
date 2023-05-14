@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="bpMgmtProductsEdytujPodkategorie" maxHeight="-Infinity" maxWidth="505.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="505.0" styleClass="background" stylesheets="@cukierniastyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbaryla.bakery.ManagementProductsEdytujPodkategorie">
+   <top>
+      <AnchorPane prefHeight="50.0" style="-fx-border-color: #000000; -fx-border-width: 0 0 4px 0; -fx-border-style: solid;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <VBox styleClass="subitemsClient">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#switchToDodajPodkategorie" styleClass="buttonManagement" text="Dodaj" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox styleClass="subitemsClient">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#switchToUsunPodkategorie" styleClass="buttonManagement" text="Usuń" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox styleClass="subitemsClient">
+                     <children>
+                        <HBox />
+                        <Button mnemonicParsing="false" styleClass="buttonManagement" text="Zmień Nazwę" />
+                     </children>
+                  </VBox>
+                  <VBox styleClass="subitemsClient">
+                     <children>
+                        <HBox />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="362.0">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="266.0">
+                     <children>
+                        <TextField fx:id="wybranaKategoria" editable="false" layoutX="29.0" layoutY="37.0" prefHeight="26.0" prefWidth="223.0" promptText="Wybierz kategorię z listy po lewej stronie" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="347.0" stylesheets="@cukierniastyles.css">
+                     <children>
+                        <TextField fx:id="textFieldDodajPodkategorie" layoutX="31.0" layoutY="14.0" promptText="Którą podkategorię dodać?" />
+                        <Button fx:id="btnDodajPodkategorie" layoutX="207.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#dodajPodkategorie" styleClass="buttonManagement" text="Button" />
+                        <Button fx:id="btnUsunPodkategorie" layoutX="207.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#usunPodkategorie" styleClass="buttonManagement" text="Button" />
+                        <TextField fx:id="textFieldUsunPodkategorie" layoutX="31.0" layoutY="15.0" prefHeight="26.0" prefWidth="171.0" promptText="Którą podkategorię usunąć?" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <HBox prefHeight="325.0" prefWidth="207.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableViewCategories" onMouseClicked="#getSelectedCategory" prefHeight="325.0" prefWidth="97.0" styleClass="tableView">
+              <columns>
+                <TableColumn prefWidth="96.0" text="C1" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableViewSubcategories" prefHeight="325.0" prefWidth="117.0" styleClass="tableView" stylesheets="@cukierniastyles.css">
+              <columns>
+                <TableColumn prefWidth="99.0" text="C1" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </left>
+</BorderPane>

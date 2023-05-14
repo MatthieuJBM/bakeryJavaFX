@@ -14,7 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
 public class Client {
- 
+    
     @FXML private ImageView clientReturnButton;
     
     @FXML private BorderPane bpClient;

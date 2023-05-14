@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpClientCiastaMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" styleClass="background" stylesheets="@cukierniastyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbaryla.bakery.ClientCiastaController">
+   <center>
+      <ScrollPane id="scroll-pane" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-width: 15px; -fx-background-radius: 5px; -fx-skin: 5px;" styleClass="background" stylesheets="@cukierniastyles.css" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="gpClientCiastaCiastaMain" prefHeight="600.0" prefWidth="470.0" styleClass="background" stylesheets="@cukierniastyles.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" percentWidth="50.0" prefWidth="235.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" percentWidth="50.0" prefWidth="235.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="ciasto1" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ciasto2" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" text="Ciasto2" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ciasto3" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" text="Ciasto3" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ciasto4" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" text="Ciasto4" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ciasto5" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" text="Ciasto5" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ciasto6" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" text="Ciasto6" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </GridPane>
+         </content>
+         <padding>
+            <Insets left="7.0" right="7.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ScrollPane>
+   </center>
+</BorderPane>
