@@ -52,12 +52,15 @@ public class ManagementProductsEdytujPodkategorie implements Initializable{
     public void dodajPodkategorie(){
         Subcategory subcategory = new Subcategory();
         subcategory.setSubcategoryName(textFieldDodajPodkategorie.getText());
+        Category category = new Category();
+        subcategory.setCategoryId(category.getCategoryId(wybranaKategoria.getText()));
         subcategory.addNewSubcategory();
         textFieldDodajPodkategorie.setVisible(false);
         textFieldDodajPodkategorie.clear();
         btnDodajPodkategorie.setVisible(false);
         allCategoriesShowMethod();
         allSubcategoriesShowMethod();
+        wybranaKategoria.clear();
     }  
     @FXML
     public void switchToDodajPodkategorie(){
@@ -72,12 +75,15 @@ public class ManagementProductsEdytujPodkategorie implements Initializable{
     public void usunPodkategorie(){
         Subcategory subcategory = new Subcategory();
         subcategory.setSubcategoryName(textFieldUsunPodkategorie.getText());
+        Category category = new Category();
+        subcategory.setCategoryId(category.getCategoryId(wybranaKategoria.getText()));
         subcategory.deleteASubcategory();
         textFieldUsunPodkategorie.setVisible(false);
         textFieldUsunPodkategorie.clear();
         btnUsunPodkategorie.setVisible(false);
         allCategoriesShowMethod();
         allSubcategoriesShowMethod();
+        wybranaKategoria.clear();
     }
     @FXML
     public void switchToUsunPodkategorie(){
@@ -101,7 +107,9 @@ public class ManagementProductsEdytujPodkategorie implements Initializable{
         selectedSubcategoriesShowMethod();
     }
     
-    public void getSelectedSubCategory() {
+    public void getSelectedSubCategoryId() {
+        wybranaKategoria.getText();
+        
         
     }
     

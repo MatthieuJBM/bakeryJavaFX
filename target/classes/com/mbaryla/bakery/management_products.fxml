@@ -32,44 +32,44 @@
          <children>
             <VBox layoutX="9.0" prefHeight="379.0" prefWidth="185.0" styleClass="slideMenuClientBackground" stylesheets="@cukierniastyles.css">
                <children>
-                  <Button mnemonicParsing="false" onMouseClicked="#switchToDodajEdytujKategorie" prefWidth="180.0" styleClass="buttonManagement" text="Edytuj Kategorie">
+                  <Button mnemonicParsing="false" onMouseClicked="#switchToDodajEdytujKategorie" prefWidth="180.0" styleClass="buttonManagement" text="Kategorie">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onMouseClicked="#switchToEdytujPodkategorie" prefWidth="180.0" styleClass="buttonManagement" stylesheets="@cukierniastyles.css" text="Edytuj Podkategorie">
+                  <Button mnemonicParsing="false" onMouseClicked="#switchToEdytujPodkategorie" prefWidth="180.0" styleClass="buttonManagement" stylesheets="@cukierniastyles.css" text="Podkategorie">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj produkt">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Produkty">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Zaaktualizuj produkt">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Skład produktów">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj skład produktu">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Alergeny">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj składniki">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Składniki">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj masę składnika">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Tabele wartości">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj składnik podstawowy">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Składniki podstawowe">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj tabelę wartości odżywczychl">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Dodaj alergen ogólny">
+                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>

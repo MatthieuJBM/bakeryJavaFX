@@ -6,6 +6,7 @@ package model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
@@ -67,5 +68,26 @@ public class Category {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             //System.exit(0);
 	}
+    }
+    
+    public Integer getCategoryId(String categoryName){
+        Integer categoryId = null;
+        try{
+            Connection myConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BakeryJavaFX", "root", "1234");
+            Statement myStmt = myConnection.createStatement();
+            String sql = "SELECT categoryId FROM categories WHERE categoryName = '" + categoryName + "';";
+            //myStmt.executeUpdate(sql);
+            ResultSet rs = myStmt.executeQuery(sql);
+            if(rs.next()) {
+                categoryId = rs.getInt("categoryId");
+            }
+            
+            rs.close();
+            myStmt.close();
+            myConnection.close();
+        }catch(Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+        }
+        return categoryId;
     }
 }

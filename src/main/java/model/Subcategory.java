@@ -23,7 +23,7 @@ public class Subcategory {
             Connection myConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BakeryJavaFX", "root", "1234");
             //Creating object statement
             Statement myStmt = myConnection.createStatement();
-            String sql = "INSERT INTO subcategories(categoryName) VALUES(\""+ this.subcategoryName + "\");";
+            String sql = "INSERT INTO subcategories(subcategoryName, categoryId) VALUES('" + this.subcategoryName + "'," + this.categoryId + ");";
             //Executing query
             myStmt.executeUpdate(sql);
             myConnection.close();		
@@ -39,10 +39,11 @@ public class Subcategory {
             Connection myConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BakeryJavaFX", "root", "1234");
             //Creating object statement
             Statement myStmt = myConnection.createStatement();
-            String sql = "DELETE FROM categories WHERE categories.categoryName = \"" + this.subcategoryName + "\";";
-            //String sql2 = "INSERT INTO categories(categoryName) VALUES(\""+ this.subcategoryName + "\");";
+            String sql = "DELETE FROM subcategories WHERE subcategories.subcategoryName = '" + this.subcategoryName + "' AND subcategories.categoryId = " + this.categoryId + ";";
+            //String sql2 = "DELETE FROM subcategories JOIN categories ON subcategories.categoryId=categories.categoryId WHERE subcategories.subcategoryName = '" + this.subcategoryName + "' AND categories.categoryId = " + this.categoryId + ";";
             //Executing query
             myStmt.executeUpdate(sql);
+            myStmt.close();
             myConnection.close();		
 	}catch(Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
