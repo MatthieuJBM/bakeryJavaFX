@@ -119,6 +119,12 @@ public class BakeryJavaFXDataBaseInstallationClass {
                                     + "categoryName varchar(30), "
                                     + "PRIMARY KEY(categoryId)"
                                     + ");";
+        
+        String sqlCreateTableProductsAndPrices = "CREATE TABLE prices( "
+                                    + "productId int, "
+                                    + "productPrice numeric(8,2), "
+                                    + "FOREIGN KEY(productId) REFERENCES products(productId)"
+                                    + ");";
             
             
             

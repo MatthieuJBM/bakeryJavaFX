@@ -41,7 +41,7 @@
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Produkty">
+                  <Button mnemonicParsing="false" onAction="#switchToEdytujProdukty" prefWidth="180.0" styleClass="buttonManagement" text="Produkty">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
@@ -53,7 +53,7 @@
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement" text="Składniki">
+                  <Button mnemonicParsing="false" onAction="#switchToEdytujSkladniki" prefWidth="180.0" styleClass="buttonManagement" text="Składniki">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
@@ -65,7 +65,7 @@
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>
-                  <Button mnemonicParsing="false" prefWidth="180.0" styleClass="buttonManagement">
+                  <Button mnemonicParsing="false" onAction="#switchToEdytujCeny" prefWidth="180.0" styleClass="buttonManagement" text="Ceny produktów">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin></Button>

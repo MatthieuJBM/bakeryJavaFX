@@ -6,6 +6,7 @@ package model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
@@ -51,7 +52,24 @@ public class Subcategory {
 	}
     }
 
-    public Integer getSubcategoryId() {
+    public Integer getSubcategoryId(String subcategoryName) {
+        Integer subcategoryId = null;
+        try{
+            Connection myConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BakeryJavaFX", "root", "1234");
+            Statement myStmt = myConnection.createStatement();
+            String sql = "SELECT subcategoryId FROM subcategories WHERE subcategoryName = '" + subcategoryName + "';";
+            //myStmt.executeUpdate(sql);
+            ResultSet rs = myStmt.executeQuery(sql);
+            if(rs.next()) {
+                subcategoryId = rs.getInt("subcategoryId");
+            }
+            
+            rs.close();
+            myStmt.close();
+            myConnection.close();
+        }catch(Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+        }
         return subcategoryId;
     }
 

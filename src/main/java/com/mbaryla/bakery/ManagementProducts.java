@@ -41,6 +41,21 @@ public class ManagementProducts {//implements Initializable{
         loadAMenuItem("ManagementProductsEdytujPodkategorie");
     }
     
+    @FXML
+    private void switchToEdytujProdukty() {
+        loadAMenuItem("ManagementProductsEdytujProdukty");
+    }
+    
+    @FXML
+    private void switchToEdytujSkladniki() {
+        loadAMenuItem("ManagementProductsEdytujSkladniki");
+    }
+    
+    @FXML
+    private void switchToEdytujCeny() {
+        loadAMenuItem("ManagementProductsEdytujCeny");
+    }
+    
     
     
     @FXML
@@ -54,45 +69,7 @@ public class ManagementProducts {//implements Initializable{
         
         bpManagementProducts.setCenter(root);
         
-    } 
-    
-    /*
-    @FXML
-    private TextField txtName;
-    @FXML
-    private Button btnAdd;
-    @FXML
-    private Button btnRemove;
-    @FXML
-    private ListView<Worker> lsvWorkers;
-    private final ObservableList<Worker> workersList = FXCollections.observableArrayList();
-    private final WorkerDAO workerDAO = new WorkerDAO();
-    
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        lsvWorkers.setItems(workersList);
-        workersList.addAll(workerDAO.getAllWorkers());
-        lsvWorkers.setCellFactory(new Callback<ListView<Worker>, ListCell<Worker>>() {
-            @Override
-            public ListCell<Worker> call(ListView<Worker> param) {
-                ListCell<Worker> listCell = new ListCell() {
-                    @Override
-                    protected void updateItem(Object item, boolean empty) {
-                        super.updateItem(item, empty);
-                        if(item!=null){
-                            Worker worker = (Worker) item;
-                            setText(worker.getName());
-                        }else{
-                            setText("");
-                        }
-                    }
-                };
-                return listCell;
-            }
-        });
     }
-    */
     
     
     @FXML

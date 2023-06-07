@@ -45,12 +45,12 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onMouseClicked="#switchToDonutBelgijski" prefHeight="130.0" prefWidth="230.0" text="Donut Belgijski" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2">
+                  <Button mnemonicParsing="false" onMouseClicked="#switchToDonutBelgijski" prefHeight="130.0" prefWidth="230.0" text="Donut Belgijski" textAlignment="CENTER" visible="false" wrapText="true" GridPane.rowIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onMouseClicked="#switchToZFarszemBigosowym" prefHeight="130.0" prefWidth="230.0" text="Pączek z Farszem Bigosowym" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <Button mnemonicParsing="false" onMouseClicked="#switchToZFarszemBigosowym" prefHeight="130.0" prefWidth="230.0" text="Pączek z Farszem Bigosowym" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>

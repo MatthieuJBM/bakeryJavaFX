@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane fx:id="bpDrozdzowkiClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" styleClass="background" stylesheets="@cukierniastyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbaryla.bakery.WypiekiController">
+<BorderPane fx:id="bpDrozdzowkiClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#pokazCeneRogalZBitaSmietana" prefHeight="300.0" prefWidth="500.0" styleClass="background" stylesheets="@cukierniastyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbaryla.bakery.DrozdzowkiController">
    <top>
       <Label styleClass="header" text="Rogal z Bitą Śmietaną" BorderPane.alignment="CENTER">
          <font>
@@ -31,19 +30,31 @@
                         <Insets left="10.0" />
                      </HBox.margin>
                   </ImageView>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
+                  <VBox prefHeight="150.0" prefWidth="151.0">
                      <children>
-                        <Label text="Cena: ">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
+                        <HBox prefHeight="29.0" prefWidth="151.0">
+                           <children>
+                              <Label text="Cena: ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRogalZBitaSmietanaPrice" text="price">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="2.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
                         <Label text="Alergeny: ">
                            <font>
                               <Font size="18.0" />
                            </font>
                            <VBox.margin>
-                              <Insets top="10.0" />
+                              <Insets top="5.0" />
                            </VBox.margin>
                         </Label>
                         <Label text="Inne">
